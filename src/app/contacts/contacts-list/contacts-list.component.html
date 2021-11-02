@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-primary">
+      <div class="panel-heading"
+           align="center">
+        <div class="col-md-1">ID</div>
+        <div class="col-md-3">NAME</div>
+        <div class="col-md-3">EMAIL</div>
+        <div class="col-md-2">PHONE NO.</div>
+        <div class="col-md-3">ACTIONS</div>
+      </div>
+      <div class="list-group">
+        <app-contacts-list-item *ngFor="let contactEl of contacts ; let i = index"
+                                [contact]="contactEl"
+                                [index]="i"></app-contacts-list-item>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <app-contact-view [viewItem]="contactWasSelected"></app-contact-view>
+(selectedContact)="onViewSelected(contactEl)" -->
