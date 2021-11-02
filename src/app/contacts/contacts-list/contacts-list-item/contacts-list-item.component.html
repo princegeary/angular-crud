@@ -1,0 +1,20 @@
+<a class="list-group-item clearfix">
+  <div class="col-md-1">{{contact.id}}</div>
+  <div class="col-md-3">{{contact.name}}</div>
+  <div class="col-md-3">{{contact.email}}</div>
+  <div class="col-md-2">{{contact.phone}}</div>
+  <div class="col-md-3">
+    <div class="btn-group"
+         role="group">
+      <button class="btn btn-primary"
+              type="button"
+              (click)="onContactView(index)">View <span class="glyphicon glyphicon-eye-open"></span></button>
+      <button class="btn btn-success"
+              type="button"
+              (click)="onContactUpdate(index)">Update <span class="glyphicon glyphicon-edit"></span></button>
+      <button class="btn btn-danger"
+              type="button"
+              (click)="onContactDelete(index)">Delete <span class="glyphicon glyphicon-remove"></span></button>
+    </div>
+  </div>
+</a>
